@@ -1,16 +1,16 @@
 {
 .appVersion = "3108";
 DisplayStrings = (
-"Ä"
+"/Ldot"
 );
 classes = (
 {
 automatic = 1;
-code = "A Aacute Acircumflex Adieresis Agrave Aring Atilde AE B C Ccedilla D Eth E Eacute Ecircumflex Edieresis Egrave F G H I IJ Iacute Icircumflex Idieresis Igrave Itilde J Jcircumflex K L Ldotaccent Lslash M N Nacute Ntilde O Oacute Ocircumflex Odieresis Ograve Oslash Otilde OE P Thorn Q R Racute Rcaron Rcommaaccent S T U Uacute Ucircumflex Udieresis Ugrave V W X Y Yacute Z";
+code = "A Aacute Acircumflex Adieresis Agrave Aring Atilde AE B C Ccedilla D Eth E Eacute Ecircumflex Edieresis Egrave F G H I IJ Iacute Icircumflex Idieresis Igrave Itilde J Jcircumflex K L Ldot Lslash M N Nacute Ntilde O Oacute Ocircumflex Odieresis Ograve Oslash Otilde OE P Thorn Q R Racute Rcaron Rcommaaccent S T U Uacute Ucircumflex Udieresis Ugrave V W X Y Yacute Z";
 name = Uppercase;
 }
 );
-copyright = "Copyright 2011 The ABeeZee Project Authors (https://github.com/googlefonts/abeezee)";
+copyright = "Copyright 2011 The ABeeZee Project Authors (https://github.com/googlefonts/abeezee) with Reserved Font Name 'ABeeZee'";
 customParameters = (
 {
 name = fsType;
@@ -67,7 +67,7 @@ name = aalt;
 automatic = 1;
 code = "lookup ccmp_Other_1 {
 	@CombiningTopAccents = [acutecomb caroncomb circumflexcomb dieresiscomb dotaccentcomb gravecomb macroncomb ringcomb tildecomb];
-	@CombiningNonTopAccents = [cedillacomb commaaccent];
+	@CombiningNonTopAccents = [cedillacomb];
 	sub [i j]' @CombiningTopAccents by [idotless jdotless];
 	sub [i j]' @CombiningNonTopAccents @CombiningTopAccents by [idotless jdotless];
 	@Markscomb = [dieresiscomb dotaccentcomb gravecomb acutecomb circumflexcomb caroncomb ringcomb tildecomb dieresis dotaccent grave acute circumflex caron ring tilde];
@@ -89,6 +89,7 @@ code = "lookup locl_latn_0 {
 	script latn;
 	language CAT;
 	sub  l' periodcentered' l by ldot;
+	sub  L' periodcentered' L by Ldot;
 } locl_latn_0;
 ";
 name = locl;
@@ -2217,8 +2218,8 @@ unicode = 004C;
 },
 {
 color = 10;
-glyphname = Ldotaccent;
-lastChange = "2022-02-02 14:10:28 +0000";
+glyphname = Ldot;
+lastChange = "2022-02-02 15:40:18 +0000";
 layers = (
 {
 associatedMasterId = "49B01604-4BAD-416A-BFCD-4FBC01F4BDB0";
@@ -3514,7 +3515,7 @@ unicode = 0052;
 {
 color = 10;
 glyphname = Racute;
-lastChange = "2022-02-02 14:10:28 +0000";
+lastChange = "2022-02-02 15:40:18 +0000";
 layers = (
 {
 associatedMasterId = "49B01604-4BAD-416A-BFCD-4FBC01F4BDB0";
@@ -3580,7 +3581,7 @@ layerId = "49B01604-4BAD-416A-BFCD-4FBC01F4BDB0";
 width = 617;
 }
 );
-unicode = 0154;
+unicode = "0154,0155";
 },
 {
 color = 10;
@@ -3670,7 +3671,7 @@ components = (
 name = R;
 },
 {
-name = commaaccent;
+name = commaaccentcomb;
 transform = "{1, 0, 0, 1, 175, 0}";
 }
 );
@@ -6621,7 +6622,7 @@ components = (
 name = k;
 },
 {
-name = commaaccent;
+name = commaaccentcomb;
 transform = "{1, 0, 0, 1, 130, 0}";
 }
 );
@@ -8179,7 +8180,7 @@ unicode = 0159;
 {
 color = 10;
 glyphname = rcommaaccent;
-lastChange = "2022-02-02 14:10:28 +0000";
+lastChange = "2022-02-02 15:41:35 +0000";
 layers = (
 {
 associatedMasterId = "49B01604-4BAD-416A-BFCD-4FBC01F4BDB0";
@@ -8194,7 +8195,7 @@ name = r;
 },
 {
 alignment = -1;
-name = commaaccent;
+name = commaaccentcomb;
 transform = "{1, 0, 0, 1, -36, -38}";
 }
 );
@@ -10767,14 +10768,13 @@ width = 600;
 {
 color = 6;
 glyphname = .null;
-lastChange = "2022-02-02 14:10:28 +0000";
+lastChange = "2022-02-02 15:40:18 +0000";
 layers = (
 {
 layerId = "49B01604-4BAD-416A-BFCD-4FBC01F4BDB0";
 width = 0;
 }
 );
-unicode = 0000;
 },
 {
 color = 6;
@@ -11629,8 +11629,8 @@ unicode = 002D;
 },
 {
 color = 6;
-glyphname = uni00AD;
-lastChange = "2022-02-02 14:10:28 +0000";
+glyphname = softhyphen;
+lastChange = "2022-02-02 15:40:18 +0000";
 layers = (
 {
 hints = (
@@ -12459,8 +12459,8 @@ unicode = 2019;
 },
 {
 color = 10;
-glyphname = guillemotleft;
-lastChange = "2022-02-02 14:10:28 +0000";
+glyphname = guillemetleft;
+lastChange = "2022-02-02 15:40:18 +0000";
 layers = (
 {
 associatedMasterId = "49B01604-4BAD-416A-BFCD-4FBC01F4BDB0";
@@ -12502,8 +12502,8 @@ unicode = 00AB;
 },
 {
 color = 10;
-glyphname = guillemotright;
-lastChange = "2022-02-02 14:10:28 +0000";
+glyphname = guillemetright;
+lastChange = "2022-02-02 15:40:18 +0000";
 layers = (
 {
 associatedMasterId = "49B01604-4BAD-416A-BFCD-4FBC01F4BDB0";
@@ -13626,97 +13626,6 @@ unicode = 00A6;
 },
 {
 color = 6;
-glyphname = Euro;
-lastChange = "2022-02-02 14:10:28 +0000";
-layers = (
-{
-associatedMasterId = "49B01604-4BAD-416A-BFCD-4FBC01F4BDB0";
-layerId = "ED5A1C3A-03C2-44DF-8033-277772C61E36";
-name = img;
-width = 600;
-},
-{
-hints = (
-{
-horizontal = 1;
-place = "{-12, 78}";
-type = Stem;
-},
-{
-horizontal = 1;
-place = "{235, 73}";
-type = Stem;
-},
-{
-horizontal = 1;
-place = "{375, 73}";
-type = Stem;
-},
-{
-horizontal = 1;
-place = "{634, 78}";
-type = Stem;
-},
-{
-place = "{110, 92}";
-type = Stem;
-}
-);
-layerId = "49B01604-4BAD-416A-BFCD-4FBC01F4BDB0";
-paths = (
-{
-closed = 1;
-nodes = (
-"474 -12 OFFCURVE",
-"541 15 OFFCURVE",
-"576 37 CURVE",
-"545 110 LINE",
-"505 87 OFFCURVE",
-"464 66 OFFCURVE",
-"399 66 CURVE SMOOTH",
-"308 66 OFFCURVE",
-"240 131 OFFCURVE",
-"212 235 CURVE",
-"441 235 LINE",
-"441 308 LINE",
-"202 308 LINE",
-"202 375 LINE",
-"461 375 LINE",
-"461 448 LINE",
-"206 448 LINE",
-"230 566 OFFCURVE",
-"302 634 OFFCURVE",
-"409 634 CURVE SMOOTH",
-"459 634 OFFCURVE",
-"503 620 OFFCURVE",
-"544 597 CURVE",
-"569 673 LINE",
-"526 695 OFFCURVE",
-"474 712 OFFCURVE",
-"406 712 CURVE SMOOTH",
-"246 712 OFFCURVE",
-"145 607 OFFCURVE",
-"116 448 CURVE",
-"23 448 LINE",
-"23 375 LINE",
-"110 375 LINE",
-"110 308 LINE",
-"23 308 LINE",
-"23 235 LINE",
-"117 235 LINE",
-"148 81 OFFCURVE",
-"246 -12 OFFCURVE",
-"390 -12 CURVE SMOOTH"
-);
-}
-);
-width = 600;
-}
-);
-unicode = 20AC;
-},
-{
-color = 6;
 glyphname = cent;
 lastChange = "2022-02-02 14:10:28 +0000";
 layers = (
@@ -14008,6 +13917,97 @@ width = 600;
 }
 );
 unicode = 0024;
+},
+{
+color = 6;
+glyphname = euro;
+lastChange = "2022-02-02 15:40:18 +0000";
+layers = (
+{
+associatedMasterId = "49B01604-4BAD-416A-BFCD-4FBC01F4BDB0";
+layerId = "ED5A1C3A-03C2-44DF-8033-277772C61E36";
+name = img;
+width = 600;
+},
+{
+hints = (
+{
+horizontal = 1;
+place = "{-12, 78}";
+type = Stem;
+},
+{
+horizontal = 1;
+place = "{235, 73}";
+type = Stem;
+},
+{
+horizontal = 1;
+place = "{375, 73}";
+type = Stem;
+},
+{
+horizontal = 1;
+place = "{634, 78}";
+type = Stem;
+},
+{
+place = "{110, 92}";
+type = Stem;
+}
+);
+layerId = "49B01604-4BAD-416A-BFCD-4FBC01F4BDB0";
+paths = (
+{
+closed = 1;
+nodes = (
+"474 -12 OFFCURVE",
+"541 15 OFFCURVE",
+"576 37 CURVE",
+"545 110 LINE",
+"505 87 OFFCURVE",
+"464 66 OFFCURVE",
+"399 66 CURVE SMOOTH",
+"308 66 OFFCURVE",
+"240 131 OFFCURVE",
+"212 235 CURVE",
+"441 235 LINE",
+"441 308 LINE",
+"202 308 LINE",
+"202 375 LINE",
+"461 375 LINE",
+"461 448 LINE",
+"206 448 LINE",
+"230 566 OFFCURVE",
+"302 634 OFFCURVE",
+"409 634 CURVE SMOOTH",
+"459 634 OFFCURVE",
+"503 620 OFFCURVE",
+"544 597 CURVE",
+"569 673 LINE",
+"526 695 OFFCURVE",
+"474 712 OFFCURVE",
+"406 712 CURVE SMOOTH",
+"246 712 OFFCURVE",
+"145 607 OFFCURVE",
+"116 448 CURVE",
+"23 448 LINE",
+"23 375 LINE",
+"110 375 LINE",
+"110 308 LINE",
+"23 308 LINE",
+"23 235 LINE",
+"117 235 LINE",
+"148 81 OFFCURVE",
+"246 -12 OFFCURVE",
+"390 -12 CURVE SMOOTH"
+);
+}
+);
+width = 600;
+}
+);
+unicode = 20AC;
 },
 {
 color = 6;
@@ -14730,8 +14730,8 @@ unicode = 005E;
 },
 {
 color = 6;
-glyphname = mu;
-lastChange = "2022-02-02 14:10:28 +0000";
+glyphname = micro;
+lastChange = "2022-02-02 15:40:18 +0000";
 layers = (
 {
 associatedMasterId = "49B01604-4BAD-416A-BFCD-4FBC01F4BDB0";
@@ -15511,6 +15511,57 @@ width = 0;
 }
 );
 unicode = 0304;
+},
+{
+color = 6;
+glyphname = commaaccentcomb;
+lastChange = "2022-02-02 15:40:18 +0000";
+layers = (
+{
+anchors = (
+{
+name = _bottom;
+position = "{134, 0}";
+},
+{
+name = bottom;
+position = "{0, 38}";
+}
+);
+hints = (
+{
+horizontal = 1;
+place = "{-50, -20}";
+target = down;
+type = TopGhost;
+},
+{
+horizontal = 1;
+place = "{-262, 21}";
+target = up;
+type = BottomGhost;
+}
+);
+layerId = "49B01604-4BAD-416A-BFCD-4FBC01F4BDB0";
+paths = (
+{
+closed = 1;
+nodes = (
+"146 -184 OFFCURVE",
+"190 -120 OFFCURVE",
+"202 -33 CURVE",
+"127 -12 LINE",
+"112 -87 OFFCURVE",
+"85 -143 OFFCURVE",
+"40 -200 CURVE",
+"82 -224 LINE"
+);
+}
+);
+width = 242;
+}
+);
+unicode = 0326;
 },
 {
 color = 6;
@@ -16677,59 +16728,8 @@ width = 423;
 },
 {
 color = 6;
-glyphname = commaaccent;
-lastChange = "2022-02-02 14:10:28 +0000";
-layers = (
-{
-anchors = (
-{
-name = _bottom;
-position = "{134, 0}";
-},
-{
-name = bottom;
-position = "{0, 38}";
-}
-);
-hints = (
-{
-horizontal = 1;
-place = "{-50, -20}";
-target = down;
-type = TopGhost;
-},
-{
-horizontal = 1;
-place = "{-262, 21}";
-target = up;
-type = BottomGhost;
-}
-);
-layerId = "49B01604-4BAD-416A-BFCD-4FBC01F4BDB0";
-paths = (
-{
-closed = 1;
-nodes = (
-"146 -184 OFFCURVE",
-"190 -120 OFFCURVE",
-"202 -33 CURVE",
-"127 -12 LINE",
-"112 -87 OFFCURVE",
-"85 -143 OFFCURVE",
-"40 -200 CURVE",
-"82 -224 LINE"
-);
-}
-);
-width = 242;
-}
-);
-unicode = F6C3;
-},
-{
-color = 6;
 glyphname = foundryicon;
-lastChange = "2022-02-02 14:10:28 +0000";
+lastChange = "2022-02-02 15:40:18 +0000";
 layers = (
 {
 associatedMasterId = "49B01604-4BAD-416A-BFCD-4FBC01F4BDB0";
@@ -16850,8 +16850,8 @@ asterisk = -60;
 backslash = -80;
 divide = -30;
 equal = -30;
-guillemotleft = -20;
-guillemotright = -20;
+guillemetleft = -20;
+guillemetright = -20;
 guilsinglleft = -20;
 guilsinglright = -20;
 hyphen = -20;
@@ -16903,7 +16903,7 @@ k = -10;
 l = -20;
 lslash = -20;
 m = -10;
-mu = -10;
+micro = -10;
 n = -10;
 nacute = -10;
 ntilde = -10;
@@ -16955,8 +16955,8 @@ asterisk = -60;
 backslash = -80;
 divide = -30;
 equal = -30;
-guillemotleft = -20;
-guillemotright = -20;
+guillemetleft = -20;
+guillemetright = -20;
 guilsinglleft = -20;
 guilsinglright = -20;
 hyphen = -20;
@@ -16998,8 +16998,8 @@ asterisk = -60;
 backslash = -80;
 divide = -30;
 equal = -30;
-guillemotleft = -20;
-guillemotright = -20;
+guillemetleft = -20;
+guillemetright = -20;
 guilsinglleft = -20;
 guilsinglright = -20;
 hyphen = -20;
@@ -17041,8 +17041,8 @@ asterisk = -60;
 backslash = -80;
 divide = -30;
 equal = -30;
-guillemotleft = -20;
-guillemotright = -20;
+guillemetleft = -20;
+guillemetright = -20;
 guilsinglleft = -20;
 guilsinglright = -20;
 hyphen = -20;
@@ -17084,8 +17084,8 @@ asterisk = -60;
 backslash = -80;
 divide = -30;
 equal = -30;
-guillemotleft = -20;
-guillemotright = -20;
+guillemetleft = -20;
+guillemetright = -20;
 guilsinglleft = -20;
 guilsinglright = -20;
 hyphen = -20;
@@ -17127,8 +17127,8 @@ asterisk = -60;
 backslash = -80;
 divide = -30;
 equal = -30;
-guillemotleft = -20;
-guillemotright = -20;
+guillemetleft = -20;
+guillemetright = -20;
 guilsinglleft = -20;
 guilsinglright = -20;
 hyphen = -20;
@@ -17170,8 +17170,8 @@ asterisk = -60;
 backslash = -80;
 divide = -30;
 equal = -30;
-guillemotleft = -20;
-guillemotright = -20;
+guillemetleft = -20;
+guillemetright = -20;
 guilsinglleft = -20;
 guilsinglright = -20;
 hyphen = -20;
@@ -17383,7 +17383,7 @@ k = -10;
 l = -20;
 lslash = -20;
 m = -10;
-mu = -10;
+micro = -10;
 n = -10;
 nacute = -10;
 ntilde = -10;
@@ -17445,7 +17445,7 @@ k = -10;
 l = -20;
 lslash = -20;
 m = -10;
-mu = -10;
+micro = -10;
 n = -10;
 nacute = -10;
 ntilde = -10;
@@ -17507,7 +17507,7 @@ k = -10;
 l = -20;
 lslash = -20;
 m = -10;
-mu = -10;
+micro = -10;
 n = -10;
 nacute = -10;
 ntilde = -10;
@@ -17569,7 +17569,7 @@ k = -10;
 l = -20;
 lslash = -20;
 m = -10;
-mu = -10;
+micro = -10;
 n = -10;
 nacute = -10;
 ntilde = -10;
@@ -17631,7 +17631,7 @@ k = -10;
 l = -20;
 lslash = -20;
 m = -10;
-mu = -10;
+micro = -10;
 n = -10;
 nacute = -10;
 ntilde = -10;
@@ -17739,8 +17739,8 @@ egrave = -50;
 f = -20;
 g = -50;
 germandbls = -50;
-guillemotleft = -20;
-guillemotright = -20;
+guillemetleft = -20;
+guillemetright = -20;
 guilsinglleft = -20;
 guilsinglright = -20;
 h = -20;
@@ -17755,7 +17755,7 @@ k = -20;
 l = -30;
 lslash = -30;
 m = -40;
-mu = -40;
+micro = -40;
 n = -40;
 nacute = -40;
 ntilde = -40;
@@ -17843,8 +17843,8 @@ asciitilde = -50;
 divide = -60;
 equal = -60;
 germandbls = -10;
-guillemotleft = -20;
-guillemotright = -20;
+guillemetleft = -20;
+guillemetright = -20;
 guilsinglleft = -20;
 guilsinglright = -20;
 hyphen = -50;
@@ -17889,8 +17889,8 @@ asterisk = -80;
 backslash = -150;
 divide = -60;
 equal = -60;
-guillemotleft = -20;
-guillemotright = -20;
+guillemetleft = -20;
+guillemetright = -20;
 guilsinglleft = -20;
 guilsinglright = -20;
 hyphen = -70;
@@ -17940,8 +17940,8 @@ asterisk = -80;
 backslash = -150;
 divide = -60;
 equal = -60;
-guillemotleft = -20;
-guillemotright = -20;
+guillemetleft = -20;
+guillemetright = -20;
 guilsinglleft = -20;
 guilsinglright = -20;
 hyphen = -70;
@@ -18018,7 +18018,7 @@ k = -10;
 l = -20;
 lslash = -20;
 m = -10;
-mu = -10;
+micro = -10;
 n = -10;
 nacute = -10;
 ntilde = -10;
@@ -18365,8 +18365,8 @@ edieresis = -85;
 egrave = -85;
 g = -85;
 germandbls = -70;
-guillemotleft = -80;
-guillemotright = -80;
+guillemetleft = -80;
+guillemetright = -80;
 guilsinglleft = -80;
 guilsinglright = -80;
 hbar = 10;
@@ -18379,7 +18379,7 @@ j = -20;
 jcircumflex = 10;
 logicalnot = -60;
 m = -65;
-mu = -65;
+micro = -65;
 n = -65;
 nacute = -65;
 ntilde = -65;
@@ -18538,8 +18538,8 @@ egrave = -45;
 equal = -40;
 g = -45;
 germandbls = -35;
-guillemotleft = -40;
-guillemotright = -40;
+guillemetleft = -40;
+guillemetright = -40;
 guilsinglleft = -40;
 guilsinglright = -40;
 hyphen = -30;
@@ -18551,7 +18551,7 @@ j = -30;
 jcircumflex = 20;
 logicalnot = -30;
 m = -40;
-mu = -40;
+micro = -40;
 n = -40;
 nacute = -40;
 ntilde = -40;
@@ -18643,8 +18643,8 @@ egrave = -30;
 equal = -30;
 g = -30;
 germandbls = -25;
-guillemotleft = -25;
-guillemotright = -25;
+guillemetleft = -25;
+guillemetright = -25;
 guilsinglleft = -25;
 guilsinglright = -25;
 hyphen = -20;
@@ -18656,7 +18656,7 @@ j = -20;
 jcircumflex = 20;
 logicalnot = -20;
 m = -25;
-mu = -25;
+micro = -25;
 n = -25;
 nacute = -25;
 ntilde = -25;
@@ -18713,8 +18713,8 @@ Q = -25;
 asciitilde = -30;
 divide = -40;
 equal = -40;
-guillemotleft = -20;
-guillemotright = -20;
+guillemetleft = -20;
+guillemetright = -20;
 guilsinglleft = -20;
 guilsinglright = -20;
 hyphen = -30;
@@ -18777,8 +18777,8 @@ edieresis = -65;
 egrave = -65;
 equal = -80;
 g = -65;
-guillemotleft = -40;
-guillemotright = -40;
+guillemetleft = -40;
+guillemetright = -40;
 guilsinglleft = -40;
 guilsinglright = -40;
 hyphen = -70;
@@ -18790,7 +18790,7 @@ j = -30;
 jcircumflex = 40;
 logicalnot = -70;
 m = -50;
-mu = -50;
+micro = -50;
 n = -50;
 nacute = -50;
 ntilde = -50;
@@ -18872,8 +18872,8 @@ edieresis = -65;
 egrave = -65;
 equal = -80;
 g = -65;
-guillemotleft = -40;
-guillemotright = -40;
+guillemetleft = -40;
+guillemetright = -40;
 guilsinglleft = -40;
 guilsinglright = -40;
 hyphen = -70;
@@ -18885,7 +18885,7 @@ j = -30;
 jcircumflex = 40;
 logicalnot = -70;
 m = -50;
-mu = -50;
+micro = -50;
 n = -50;
 nacute = -50;
 ntilde = -50;
@@ -18937,7 +18937,7 @@ Yacute = -15;
 asciitilde = -70;
 divide = -80;
 equal = -80;
-guillemotright = -30;
+guillemetright = -30;
 guilsinglright = -30;
 hyphen = -70;
 icircumflex = 5;
@@ -19626,7 +19626,7 @@ y = 10;
 yacute = 10;
 ydieresis = 10;
 };
-guillemotleft = {
+guillemetleft = {
 A = -20;
 AE = -20;
 Aacute = -20;
@@ -19645,7 +19645,7 @@ Y = -40;
 Yacute = -40;
 Z = -30;
 };
-guillemotright = {
+guillemetright = {
 A = -20;
 AE = -20;
 Aacute = -20;
@@ -19836,8 +19836,8 @@ ecircumflex = -15;
 edieresis = -15;
 egrave = -15;
 g = -15;
-guillemotleft = -15;
-guillemotright = -15;
+guillemetleft = -15;
+guillemetright = -15;
 guilsinglleft = -15;
 guilsinglright = -15;
 o = -15;
@@ -19869,8 +19869,8 @@ ecircumflex = -15;
 edieresis = -15;
 egrave = -15;
 g = -15;
-guillemotleft = -15;
-guillemotright = -15;
+guillemetleft = -15;
+guillemetright = -15;
 guilsinglleft = -15;
 guilsinglright = -15;
 o = -15;
@@ -19902,8 +19902,8 @@ ecircumflex = -15;
 edieresis = -15;
 egrave = -15;
 g = -15;
-guillemotleft = -15;
-guillemotright = -15;
+guillemetleft = -15;
+guillemetright = -15;
 guilsinglleft = -15;
 guilsinglright = -15;
 o = -15;
@@ -19948,8 +19948,8 @@ edieresis = -15;
 egrave = -15;
 g = -15;
 germandbls = -10;
-guillemotleft = -20;
-guillemotright = -20;
+guillemetleft = -20;
+guillemetright = -20;
 guilsinglleft = -20;
 guilsinglright = -20;
 l = -10;
@@ -20032,8 +20032,8 @@ edieresis = -15;
 egrave = -15;
 g = -15;
 germandbls = -10;
-guillemotleft = -20;
-guillemotright = -20;
+guillemetleft = -20;
+guillemetright = -20;
 guilsinglleft = -20;
 guilsinglright = -20;
 l = -10;
