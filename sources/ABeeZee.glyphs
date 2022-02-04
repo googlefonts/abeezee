@@ -10,7 +10,7 @@ code = "A Aacute Acircumflex Adieresis Agrave Aring Atilde AE B C Ccedilla D Eth
 name = Uppercase;
 }
 );
-copyright = "Copyright 2011 The ABeeZee Project Authors (https://github.com/googlefonts/abeezee) with Reserved Font Name 'ABeeZee'";
+copyright = "Copyright 2011 The ABeeZee Project Authors (https://github.com/googlefonts/abeezee) with Reserved Font Name ABeeZee";
 customParameters = (
 {
 name = fsType;
